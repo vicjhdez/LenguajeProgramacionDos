@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //androidx.constraintlayout.widget.ConstraintLayout
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login UNIBE"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="281dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@android:color/holo_blue_bright"
+        android:hint="Introduzca su user"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="437dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@android:color/holo_blue_bright"
+        android:hint="Introduzca su pass"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="499dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnentrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Entrar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="563dp" />
+
+    <Button
+        android:id="@+id/btnlimpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Limpiar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="563dp" />
+
+
+</LinearLayout>
